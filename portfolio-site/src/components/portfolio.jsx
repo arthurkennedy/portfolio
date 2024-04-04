@@ -65,6 +65,12 @@ function Portfolio() {
                     website="https://globalekklesia.com/"
                     summary="Global Ekklesia: Spreading the Good News of Jesus Christ's Second Coming and salvation through Biblical Truth."
                 />
+                <PortfolioCard
+                    imgSrc="https://cdn-icons-png.flaticon.com/128/11376/11376446.png"
+                    name="My Portfolio Website"
+                    githubLink="https://github.com/arthurkennedy/portfolio"
+                    summary="Utilizing React.js, I crafted this portfolio website."
+                />
             </div>
       </section>
     )
