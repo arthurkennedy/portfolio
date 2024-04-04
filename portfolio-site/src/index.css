@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.logo h1 {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #555;
+}
+
+/*hero*/
+
+.hero {
+  margin: auto;
+  display: flex;
+}
+
+.hero .image-container, .hero .intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.hero .image-container img {
+  border: 4px solid white;
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+.hero .image-container .inner-container {
+  display: flex;
+  border: 4px solid #333;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero .intro h1,.hero .intro p  {
+  padding: 5px 0px;
+}
+
+/* sections */
+
+section {
+  max-width: 900px;
+  width: 100%;
+  padding: 90px 0px;
+  margin: auto;
+  display: block;
+}
+
+section .title {
+  padding: 15px 0px;
+  color: #6d6d6d;
+  font-weight: 200px;
+  font-family: Open Sans, sans-serif;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+section .body {
+  padding: 15px 0px;
+}
+
+section .hr-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* cards */
+
+.vertical-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.vertical-card .logo-img {
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+.vertical-card .details {
+  font-size: 16px;
+}
+
+.vertical-card .details p {
+  margin: 5px 0;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.tech-card .logo-img {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+}
+
+.tech-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+
