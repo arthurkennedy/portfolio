@@ -63,7 +63,7 @@ function Portfolio() {
                     imgSrc="https://cdn-icons-png.flaticon.com/128/174/174881.png"
                     name="Wordpress Website (Global Ekklesia)"
                     website="https://globalekklesia.com/"
-                    summary="Global Ekklesia: Spreading the Good News of Jesus Christ's Second Coming and salvation through Biblical Truth."
+                    summary="I utilized Wordpress to design and develop this website for a non-profit."
                 />
                 <PortfolioCard
                     imgSrc="https://cdn-icons-png.flaticon.com/128/11376/11376446.png"

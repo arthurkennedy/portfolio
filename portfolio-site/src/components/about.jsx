@@ -14,6 +14,24 @@ const EducationCard = ({ imgSrc, school, degree, date }) => {
     )
 }
 
+const ExperienceCard = ({ imgSrc, company, title, dates, summary}) => {
+    return (
+        <div className="vertical-card">
+            <img className="logo-img" src={imgSrc} alt="School image" />
+            <div>
+                <h1>{title}</h1>
+                <div className="details">
+                    <p><strong>Company</strong>: {company}</p>
+                    <p><strong>Dates</strong>: {dates}</p>
+                    {summary && (
+                        <p><strong>Summary</strong>: {summary}</p>
+                    )}
+                </div>
+            </div>
+        </div>
+    )
+}
+
 const TechCard = ({ imgSrc, name }) => {
     return (
         <div className="tech-card">
@@ -41,10 +59,26 @@ function About() {
                         date="December, 2023"
                     />
                     <EducationCard 
-                        imgSrc="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/305839610_503554435107173_468455099150828626_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=DQjRG8V0gVoAb7T-Xbr&_nc_ht=scontent-msp1-1.xx&oh=00_AfDBKDbMarS57PQzPuGxTiy09XaRuZbLLQX60zVXY6zS4g&oe=6613CDD8" 
+                        imgSrc="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaL-d5q5MofC2hlzrY1wKHDcvAypWO5NdbFg-3zC7NFII1oo-y" 
                         school="Anoka Technical College" 
                         degree="A.S in IT Management with Software Development Emphasis"
                         date="May, 2021"
+                    />
+                </div>
+            </section>
+
+            <section className="body">
+                <div className="title">
+                <h1>Experience</h1>
+                </div>
+
+                <div className="body">
+                    <ExperienceCard
+                        imgSrc="https://media.licdn.com/dms/image/D560BAQGKf1lAXNGhqA/company-logo_200_200/0/1704932084483/dayton_rogers_mfg_logo?e=1722470400&v=beta&t=BUt5S-0wYu8US4qAi91krm6FpS80AwKwRVaYte9McFw" 
+                        title="Software Developer - Capstone Project"
+                        company="Dayton Rogers Mfg" 
+                        dates="Jan 2021 - May 2021 - 5 months"
+                        summary="Collaborated with a cross-functional team to implement a SharePoint site and Power App forms, automating the hiring process and simplifying PTO requests."
                     />
                 </div>
             </section>
