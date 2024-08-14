@@ -1,3 +1,4 @@
+import profile from '../assets/profile.jpg';
 
 function Hero() {
 
@@ -5,7 +6,7 @@ function Hero() {
       <section className="hero" id="home">
         <div className="image-container">
             <div className="inner-container">
-                <img src="https://media.licdn.com/dms/image/D5603AQEdCofAYljTuA/profile-displayphoto-shrink_800_800/0/1707379928369?e=1717632000&v=beta&t=OJWYpBRRMAurzfH12aSTUu_tRayoiJXs4kKBytgk7Qc" alt="Profile Picture" />
+                <img src={profile} alt="Profile Picture" />
             </div>
         </div>
 

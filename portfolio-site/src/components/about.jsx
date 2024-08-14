@@ -1,3 +1,4 @@
+import daytonRogers from '../assets/dayton-rogers.png';
 
 const EducationCard = ({ imgSrc, school, degree, date }) => {
     return (
@@ -53,15 +54,21 @@ function About() {
 
                 <div className="body">
                     <EducationCard 
+                        imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3S-8SzzW2LWzjkdOA6uujx90ZH3x_ritAFczGaBRyJr0VPb3mCgSSbGjB4ZgfSHmmNIo&usqp=CAU" 
+                        school="University of St Thomas" 
+                        degree="Masters  in Artificial Intelligence"
+                        date="Dec, 2025"
+                    />
+                    <EducationCard 
                         imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOQlHkEdWSY8OZl5wuCi-L6dOwl2tG_CKXbDSJVes-yg&s" 
                         school="Concordia University, St Paul" 
-                        degree="Bachelor of Science in Computer Science"
+                        degree="Bachelor's degree, Computer Science"
                         date="December, 2023"
                     />
                     <EducationCard 
                         imgSrc="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaL-d5q5MofC2hlzrY1wKHDcvAypWO5NdbFg-3zC7NFII1oo-y" 
                         school="Anoka Technical College" 
-                        degree="A.S in IT Management with Software Development Emphasis"
+                        degree="Associates degree, IT Management with Software Development Emphasis"
                         date="May, 2021"
                     />
                 </div>
@@ -74,7 +81,14 @@ function About() {
 
                 <div className="body">
                     <ExperienceCard
-                        imgSrc="https://media.licdn.com/dms/image/D560BAQGKf1lAXNGhqA/company-logo_200_200/0/1704932084483/dayton_rogers_mfg_logo?e=1722470400&v=beta&t=BUt5S-0wYu8US4qAi91krm6FpS80AwKwRVaYte9McFw" 
+                        imgSrc="https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/634/000/original/outlier.jpeg?1710272286" 
+                        title="AI/ML Trainer & Reviewer"
+                        company="Outlier" 
+                        dates="March 2024 - PRESENT"
+                        summary="Review project work and Train AI models."
+                    />
+                    <ExperienceCard
+                        imgSrc={daytonRogers}
                         title="Software Developer - Capstone Project"
                         company="Dayton Rogers Mfg" 
                         dates="Jan 2021 - May 2021 - 5 months"
